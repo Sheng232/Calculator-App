@@ -8,31 +8,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header>
+        <h1 class="center">Stupid calculator
+            <br>Ti-1000-JavaScript
+        </h1>
+    </header>
     <main class="flexbox">
         <div class="calculator-body">
             <div class="display-panel">
+                <span class="side-display"></span>
                 <span class="display"></span>
             </div>
             <div class="user-inputs">
                     <button id="sign-btn">+/-</button>
-                    <button id="pi-btn">π</button>
+                    <button id="square-btn">x^2</button>
                     <button id="clear-btn">AC</button>
                     <button id="delete-btn"><i class="fa-solid fa-delete-left"></i></button>
-                    <button id="divide-btn"><i class="fa-solid fa-divide"></i></button>
+                    <button id="divide-btn" class="operator-btn"><i class="fa-solid fa-divide no-pointer-event"></i></button>
                     <button id="7-btn" class="numbers-btn">7</button>
                     <button id="8-btn" class="numbers-btn">8</button>
                     <button id="9-btn" class="numbers-btn">9</button>
-                    <button id="multiply-btn"><i class="fa-solid fa-xmark"></i></button>
+                    <button id="multiply-btn" class="operator-btn"><i class="fa-solid fa-xmark no-pointer-event"></i></button>
                     <button id="4-btn" class="numbers-btn">4</button>
                     <button id="5-btn" class="numbers-btn">5</button>
                     <button id="6-btn" class="numbers-btn">6</button>
-                    <button id="minus-btn"><i class="fa-solid fa-minus"></i></button>
+                    <button id="minus-btn" class="operator-btn"><i class="fa-solid fa-minus no-pointer-event"></i></button>
                     <button id="1-btn" class="numbers-btn">1</button>
                     <button id="2-btn" class="numbers-btn">2</button>
                     <button id="3-btn" class="numbers-btn">3</button>
-                    <button id="plus-btn"><i class="fa-solid fa-plus"></i></button>
+                    <button id="plus-btn" class="operator-btn"><i class="fa-solid fa-plus no-pointer-event"></i></button>
                     <button id="equal-btn"><i class="fa-solid fa-equals"></i></button>
-                    <button id="5-btn" class="numbers-btn">0</button>
+                    <button id="btn-0">0</button>
                     <button id="decimal-btn">.</button>
             </div>
         </div>

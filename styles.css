@@ -2,10 +2,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 .calculator-body{
     width: 350px;
     height: 650px;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 .display-panel{
     height: 40%;
@@ -32,6 +33,11 @@ button{
     height: 70px;
     margin: 0 auto;
     font-size: 20px;
+    cursor: pointer;
+    background-color: lightyellow;
+}
+button:hover{
+    background-color: yellow;
 }
 .display{
     position: absolute;
@@ -39,4 +45,17 @@ button{
     font-size: 30px;
     bottom: 5px;
     right: 10px;
+}
+.side-display{
+    position: absolute;
+    font-size: 20px;
+    bottom: 40px;
+    right: 10px;
+    
+}
+.no-pointer-event{
+    pointer-events: none;
+}
+.center{
+    text-align: center;
 }
