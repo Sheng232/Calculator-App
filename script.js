@@ -12,8 +12,9 @@ const operatorBtn = document.querySelectorAll(".operator-btn");
 let answer = 0;
 let isOperatorActive = false;
 let currentOperator = "";
-let displayNum = [];
+let displayNum = [0];
 let smallDisplayNum = 0;
+renderDisplayPanel()
 equalBtn.addEventListener("click", ()=>{
     if(currentOperator == operatorBtn[0]) //divide
         answer = divide(smallDisplayNum, renderDisplayPanel());
